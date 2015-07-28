@@ -14,8 +14,6 @@ App::uses('Debugger', 'Utility');
 ?>
 <link rel="stylesheet" href="app/webroot/css/eagle.css" type="text/css">
 
-<h2 align="left"><?php echo '<img src="app/webroot/img/eagle pic1.jpg" alt="EFS" width="300" height="200"/>'; ?></h2>
-
 <?php
 if (Configure::read('debug') > 0):
 	Debugger::checkSecurityKeys();
@@ -34,16 +32,3 @@ endif;
 // 	'APP/View/Pages/home.ctp', 'APP/View/Layouts/default.ctp', 'APP/webroot/css');
 ?>
 </p> -->
-
-<p align='center'>
-	<a href="http://localhost:8080/eagle/customers">Customers</a>
-</p>
-<p align='center'>
-	<a href="http://localhost:8080/eagle/investments">Investments</a>
-</p>
-<p align='center'>
-	<a href="http://localhost:8080/eagle/mutualfunds">Mutual Funds</a>
-</p>
-<p align='center'>
-	<a href="http://localhost:8080/eagle/Stocks">Stocks</a>
-</p>

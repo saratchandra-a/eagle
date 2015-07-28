@@ -75,6 +75,7 @@ p {
 /** Layout **/
 #container {
 	text-align: left;
+	height:150px;
 }
 
 #header{
@@ -107,6 +108,10 @@ p {
 #footer {
 	clear: both;
 	padding: 6px 10px;
+}
+#footer p{
+font-weight:italic;
+font-size:10px;
 }
 #header a, #footer a {
 	color: #fff;

@@ -38,11 +38,12 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 <body>
 	<div id="container">
 		<div id="header">
-			<a href="../eagle"><h1><label for="homelabel">EAGLE FINANCIAL SERVICES</label></h1></a>
-			<a href="../eagle/customers"><h1><label for="customerlabel">CUSTOMERS</label></h1></a>
-			<a href="../eagle/investments"><h1><label for="investmentslabel">INVESTMENST</label></h1></a>
-			<a href="../eagle/mutualfunds"><h1><label for="mutualfundsabel">MUTUAL FUNDS</label></h1></a>
-			<a href="../eagle/stocks"><h1><label for="stockslabel">STOCKS</label></h1></a>
+		<h1 align="center"><?php echo '<img src="app/webroot/img/eagle pic1.jpg" alt="EFS" width="300" height="200"/>'; ?></h1>
+			<a href="../eagle"><h1 align="center"><label for="homelabel">EAGLE FINANCIAL SERVICES</label></h1></a>
+			<a href="../eagle/customers"><h1 align="center"><label for="customerlabel">CUSTOMERS</label></h1></a>
+			<a href="../eagle/investments"><h1 align="center"><label for="investmentslabel">INVESTMENST</label></h1></a>
+			<a href="../eagle/mutualfunds"><h1 align="center"><label for="mutualfundsabel">MUTUAL FUNDS</label></h1></a>
+			<a href="../eagle/stocks"><h1 align="center"><label for="stockslabel">STOCKS</label></h1></a>
 		</div>
 		<div id="content">
 
@@ -52,7 +53,11 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		</div>
 		<div id="footer">
 			<p>
-				Sarat Chandra Anappindi
+				Contact Us,</br>
+				929 S 70th Plaza</br>
+				Unit #2</br>
+				Omaha,</br>
+				Nebraska- 68106
 			</p>
 		</div>
 	</div>

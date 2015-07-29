@@ -20,10 +20,14 @@
 	margin:0;
 	padding:0;
 }
-
+#headercontenttab td {
+    background-color:#C0C0C0;
+}
+#footerLabel{ color:black}
 /** General Style Info **/
 body {
 	background: #003d4c;
+	background-image: url('http://christydecker.com/wp-content/uploads/2013/01/White-christmas-light-background.jpg');
 	color: #fff;
 	font-family:'lucida grande',verdana,helvetica,arial,sans-serif;
 	font-size:90%;
@@ -46,12 +50,12 @@ h1, h2, h3, h4 {
 	margin-bottom:0.5em;
 }
 h1 {
-	background:#fff;
+	
 	color: #003d4c;
 	font-size: 100%;
 }
 h2 {
-	background:#fff;
+	
 	color: #e32;
 	font-family:'Gill Sans','lucida grande', helvetica, arial, sans-serif;
 	font-size: 190%;
@@ -83,13 +87,12 @@ p {
 }
 #header h1 {
 	line-height:20px;
-	background: #003d4c no-repeat left;
-	color: #fff;
 	padding: 0px 30px;
+	font-weight: bold;
 }
 #header h1 a {
 	color: #fff;
-	background: #003d4c;
+	
 	font-weight: normal;
 	text-decoration: none;
 }
@@ -99,7 +102,6 @@ p {
 	text-decoration: underline;
 }
 #content{
-	background: #fff;
 	clear: both;
 	color: #333;
 	padding: 10px 20px 40px 20px;
@@ -109,12 +111,13 @@ p {
 	clear: both;
 	padding: 6px 10px;
 }
+
 #footer p{
 font-weight:italic;
 font-size:10px;
 }
 #header a, #footer a {
-	color: #fff;
+	color: black;
 }
 #cake-powered {
 	float: right;
@@ -172,7 +175,7 @@ table tr td {
 	border-bottom:1px solid #ddd;
 }
 table tr:nth-child(even) {
-	background: #f9f9f9;
+	
 }
 td.actions {
 	text-align: center;
@@ -248,7 +251,7 @@ dl {
 }
 dl dd:nth-child(4n+2),
 dl dt:nth-child(4n+1) {
-	background: #f4f4f4;
+	
 }
 
 dt {
@@ -316,6 +319,7 @@ form div.submit {
 }
 label {
 	display: block;
+	font-weight:700;
 	font-size: 110%;
 	margin-bottom:3px;
 }

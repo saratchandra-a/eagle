@@ -88,7 +88,6 @@
 		<th><?php echo __('Recentdate'); ?></th>
 		<th><?php echo __('Created'); ?></th>
 		<th><?php echo __('Modified'); ?></th>
-		<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
 	<?php foreach ($customer['Investment'] as $investment): ?>
 		<tr>
@@ -102,21 +101,10 @@
 			<td><?php echo $investment['recentdate']; ?></td>
 			<td><?php echo $investment['created']; ?></td>
 			<td><?php echo $investment['modified']; ?></td>
-			<td class="actions">
-				<?php echo $this->Html->link(__('View'), array('controller' => 'investments', 'action' => 'view', $investment['id'])); ?>
-				<?php echo $this->Html->link(__('Edit'), array('controller' => 'investments', 'action' => 'edit', $investment['id'])); ?>
-				<?php echo $this->Form->postLink(__('Delete'), array('controller' => 'investments', 'action' => 'delete', $investment['id']), array(), __('Are you sure you want to delete # %s?', $investment['id'])); ?>
-			</td>
 		</tr>
 	<?php endforeach; ?>
 	</table>
 <?php endif; ?>
-
-	<div class="actions">
-		<ul>
-			<li><?php echo $this->Html->link(__('New Investment'), array('controller' => 'investments', 'action' => 'add')); ?> </li>
-		</ul>
-	</div>
 </div>
 <div class="related">
 	<h3><?php echo __('Related Mutualfunds'); ?></h3>
@@ -127,7 +115,6 @@
 		<th><?php echo __('Customer Id'); ?></th>
 		<th><?php echo __('Mftitle'); ?></th>
 		<th><?php echo __('Mfsymbol'); ?></th>
-		<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
 	<?php foreach ($customer['Mutualfund'] as $mutualfund): ?>
 		<tr>
@@ -135,21 +122,10 @@
 			<td><?php echo $mutualfund['customer_id']; ?></td>
 			<td><?php echo $mutualfund['mftitle']; ?></td>
 			<td><?php echo $mutualfund['mfsymbol']; ?></td>
-			<td class="actions">
-				<?php echo $this->Html->link(__('View'), array('controller' => 'mutualfunds', 'action' => 'view', $mutualfund['id'])); ?>
-				<?php echo $this->Html->link(__('Edit'), array('controller' => 'mutualfunds', 'action' => 'edit', $mutualfund['id'])); ?>
-				<?php echo $this->Form->postLink(__('Delete'), array('controller' => 'mutualfunds', 'action' => 'delete', $mutualfund['id']), array(), __('Are you sure you want to delete # %s?', $mutualfund['id'])); ?>
-			</td>
 		</tr>
 	<?php endforeach; ?>
 	</table>
 <?php endif; ?>
-
-	<div class="actions">
-		<ul>
-			<li><?php echo $this->Html->link(__('New Mutualfund'), array('controller' => 'mutualfunds', 'action' => 'add')); ?> </li>
-		</ul>
-	</div>
 </div>
 <div class="related">
 	<h3><?php echo __('Related Stocks'); ?></h3>
@@ -166,7 +142,6 @@
 		<th><?php echo __('Datepurchased'); ?></th>
 		<th><?php echo __('Created'); ?></th>
 		<th><?php echo __('Modified'); ?></th>
-		<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
 	<?php foreach ($customer['Stock'] as $stock): ?>
 		<tr>
@@ -180,19 +155,8 @@
 			<td><?php echo $stock['datepurchased']; ?></td>
 			<td><?php echo $stock['created']; ?></td>
 			<td><?php echo $stock['modified']; ?></td>
-			<td class="actions">
-				<?php echo $this->Html->link(__('View'), array('controller' => 'stocks', 'action' => 'view', $stock['id'])); ?>
-				<?php echo $this->Html->link(__('Edit'), array('controller' => 'stocks', 'action' => 'edit', $stock['id'])); ?>
-				<?php echo $this->Form->postLink(__('Delete'), array('controller' => 'stocks', 'action' => 'delete', $stock['id']), array(), __('Are you sure you want to delete # %s?', $stock['id'])); ?>
-			</td>
 		</tr>
 	<?php endforeach; ?>
 	</table>
 <?php endif; ?>
-
-	<div class="actions">
-		<ul>
-			<li><?php echo $this->Html->link(__('New Stock'), array('controller' => 'stocks', 'action' => 'add')); ?> </li>
-		</ul>
-	</div>
 </div>

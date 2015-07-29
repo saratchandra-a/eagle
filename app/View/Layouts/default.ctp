@@ -37,14 +37,13 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 </head>
 <body>
 	<div id="container">
-		<div id="header">
-		<h1 align="center"><?php echo '<img src="app/webroot/img/eagle pic1.jpg" alt="EFS" width="300" height="200"/>'; ?></h1>
-			<a href="../eagle"><h1 align="center"><label for="homelabel">EAGLE FINANCIAL SERVICES</label></h1></a>
-			<a href="../eagle/customers"><h1 align="center"><label for="customerlabel">CUSTOMERS</label></h1></a>
-			<a href="../eagle/investments"><h1 align="center"><label for="investmentslabel">INVESTMENST</label></h1></a>
-			<a href="../eagle/mutualfunds"><h1 align="center"><label for="mutualfundsabel">MUTUAL FUNDS</label></h1></a>
-			<a href="../eagle/stocks"><h1 align="center"><label for="stockslabel">STOCKS</label></h1></a>
-		</div>
+		<table id="headercontenttab">
+		<tr><td><a href="http://localhost:8080/eagle/"><h1 align="center" ><label  for="homelabel">HOME</label></h1></a></td>
+		<td><a href="http://localhost:8080/eagle/customers"><h1 align="center"><label for="customerlabel">CUSTOMERS</label></h1></a></td>
+		<td><a href="http://localhost:8080/eagle/investments"><h1 align="center" ><label for="investmentslabel">INVESTMENT</label></h1></a></td>
+		<td><a href="http://localhost:8080/eagle/mutualfunds"><h1 align="center"><label for="mutualfundsabel">MUTUAL FUNDS</label></h1></a></td>
+		<td><a href="http://localhost:8080/eagle/stocks"><h1 align="center" ><label for="stockslabel">STOCKS</label></h1></a></td></tr>
+		</table>
 		<div id="content">
 
 			<?php echo $this->Session->flash(); ?>
@@ -52,13 +51,13 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 			<?php echo $this->fetch('content'); ?>
 		</div>
 		<div id="footer">
-			<p>
+			<label id="footerLabel">
 				Contact Us,</br>
 				929 S 70th Plaza</br>
 				Unit #2</br>
 				Omaha,</br>
-				Nebraska- 68106
-			</p>
+				Nebraska- 68106 </label>
+			<h3 align="right""><a href="https://github.com/saratchandra-a/eagle">Check out my GitHub repository</h3>
 		</div>
 	</div>
 </body>
